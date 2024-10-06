@@ -1,5 +1,5 @@
 from datetime import datetime
-import paises
+import paises 
 
 class Autor(paises):
     def _init_(self, id_autor, nombre_autor, codigo_pais, fecha_nac, fecha_def, biografia_autor, foto_autor):
@@ -16,3 +16,6 @@ class Autor(paises):
         fecha_dt = datetime.strptime(fecha, '%d/%m/%y')
         fecha_str = fecha_dt.strftime('%Y-%m-%d')
         return fecha_str
+    
+    def agregar_libro(self, libro):
+        self.libros.append(libro)
