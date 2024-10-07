@@ -1,4 +1,4 @@
-import Libros 
+import Libros
 
 class DetalleLibro(Libros):
     def __init__(self, id_detalle_libro, isbn, fecha_edicion, id_editorial, numero_paginas, id_categoria_libro, cantidad_ejemplares, ejemplares_disponibles):
