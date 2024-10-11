@@ -7,6 +7,8 @@ class libro:
         self.isbn = isbn
         self.cantidad = cantidad
 
+# Sobrescritura del metodo __repr__ (Polimorfismo)
     def __repr__(self) -> str:
+         #Polimorfismo: redefinimos la forma en que el objeto se representa en texto 
          return f"{self.titulo} por {self.autor_nombre} (ISBN: [{self.isbn}, Disponible: {self.cantidad})"
     

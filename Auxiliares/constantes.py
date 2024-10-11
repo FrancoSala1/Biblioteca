@@ -1,5 +1,6 @@
 from datetime import datetime
 
+# Estado del usuario (Encapsulamiento)
 estado_usuario = {
     "id": 1, "estado": "Habilidato",
     "id": 2, "estado": "Desabilitado"
@@ -7,6 +8,7 @@ estado_usuario = {
 
 dias_prestamo = 5
 
+# Dias festivos del año actual (Encapsulamiento)
 festivos = {
     datetime(datetime.now().year, 1, 1),
     datetime(datetime.now().year, 4, 8),
